@@ -66,17 +66,7 @@ body{animation:pageIn .5s ease-out}
   transition:height .3s,opacity .3s,background .25s,width .3s;
   box-shadow:1px 0 6px rgba(26,35,50,.18);
 }
-.side-nav-handle::after{
-  content:'MENU';
-  position:absolute;left:26px;top:50%;
-  transform:translateY(-50%) rotate(-90deg);transform-origin:left center;
-  font-family:'Inter',sans-serif;font-size:.68rem;font-weight:700;
-  letter-spacing:.28em;color:var(--sand-deep);
-  opacity:.7;transition:opacity .3s,left .3s;
-  white-space:nowrap;pointer-events:none;
-}
 .side-nav-handle:hover::before{height:120px;opacity:1;width:8px}
-.side-nav-handle:hover::after{opacity:1;left:30px}
 .side-nav.open ~ .side-nav-handle,
 .side-nav.open + .side-nav-handle{opacity:0;pointer-events:none}
 
